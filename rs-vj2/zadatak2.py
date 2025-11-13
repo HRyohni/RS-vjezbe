@@ -33,5 +33,5 @@ rijeci = ["jabuka", "pas", "knjiga", "zvijezda", "prijatelj", "zvuk", "čokolada
 "pjesma", "otorinolaringolog"]
 min_duljina = int(input("Unesite minimalnu duljinu riječi: "))
 # min_duljina = 7
-duge_rijeci = list(map(lambda x :x if  len(x) >= min_duljina else "", rijeci))
+duge_rijeci = list(filter(lambda x :len(x) >= min_duljina, rijeci))
 print(duge_rijeci) # ['zvijezda', 'prijatelj', 'čokolada', 'otorinolaringolog']
